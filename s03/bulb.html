@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>
+        Turn on/Turn off 
+        <img id="bulb" src="pic_bulboff.gif" style = "width:20px">
+    
+    </h1>
+    
+    <br> <!-- this is making a new line on the page. -->
+    
+    <p>Options:</p>
+    
+    <br>
+
+    <button 
+        onclick = "document.getElementById('bulb').src='pic_bulbon.gif'">
+        Turn on the light!
+    </button>
+    
+    <br>
+
+    <button 
+        onclick = "document.getElementById('bulb').src='pic_bulboff.gif'">
+        Turn off the light!
+    </button>
+
+    <br>
+
+    <button
+        onclick = "document.getElementById('bulb').style.display = 'block'">
+        show up the bulb.
+    </button>
+
+    <br>
+
+    <!-- problem of display function is relocate the picture to another place. -->
+    <button
+        onclick = "document.getElementById('bulb').style.display = 'none'">
+        hide the bulb.
+    </button>
+
+    <br>
+
+    <button
+        onclick = "document.getElementById('bulb').style.visibility = 'visible'">
+        visible bulb
+    </button>
+
+    <br>
+
+    <button
+        onclick = "document.getElementById('bulb').style.visibility = 'hidden'">
+        unvisible bulb <!--without chainging location.-->
+    </button>
+    
+   
+
+    
+
+</body>
+</html>
