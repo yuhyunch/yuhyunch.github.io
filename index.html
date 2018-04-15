@@ -6,11 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <h1>This is my main website.</h1>
-    <h2>Yuhyun Chung.</h2>
 
+    <div class="backContainer"> 
+        <!-- Video as a background for website. -->
+        <video autoplay muted loop id="videoBackground" src="milkyWay.mov" type = "video/mov">
+
+        </video>  
+    
+        <div class="overlay">
+            
+            <h1>This is my main website.</h1>
+            <h2>Created by Yuhyun Chung.</h2>
+            <p class = "greeting" id = "greeting">  </p>
+
+            <form>
+                <p>Content Below Your Video</p>
+                <label for="input">Form Input Label</label>
+                <input id="input" name="input" value="" />
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+
+    </div>
+    
+
+    
+    <!--
     <ul>
         <p2>Beginning html.</p2>
         <li>first.html</li>
@@ -22,5 +48,46 @@
         <li>bulb.html</li>
         <li><a href="https://yuhyunch.github.io/s03/3.bulb">bulb</a></li>
     </ul>
+    -->
+
+
+
+  
+
+
+    <!-- JavaScript -->      
+    <script>
+
+        // Get the video
+        var video = document.getElementById("myVideo");
+
+        // Get the button
+        var btn = document.getElementById("myBtn");
+
+        // Pause and play the video, and change the button text
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+                btn.innerHTML = "Pause";
+            } else {
+            video.pause();
+            btn.innerHTML = "Play";
+        }
+}
+
+        /*
+            var first = prompt("Enter your first name.");
+            var second = prompt("Enter your second name.");
+            var name = first + name;
+            var greeting = "Hello! " + name + ". Welcome to Yuhyun's Website."
+            //Writing into the browser console, using console.log().
+            //console.log("Hello! " + name + "<br>" + "Welcome to Yuhyun's Website.");
+
+            document.getElementById('greeting').innerHTML = greeting;
+        */
+
+
+    </script>
+    
 </body>
 </html>

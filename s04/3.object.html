@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // object has property and method.
+        var myCar = {
+            name: "Accord",
+            maker: "Honda",
+            year: "2015",
+            color: "grey"
+        };
+        // Create a object called person that contains three properties
+        var person = {
+            firstName: "Yuhyun",
+            lastName: "Chung",
+            age: "21",
+            height: "185",
+
+            getFullName: function () {
+                return this.firstName + " " + this.lastName;
+            }
+        };
+        
+        //one way to print out properties.
+        console.log(person.firstName);
+        console.log(person.age);
+        console.log(person.height);
+        //another way to print out properties.
+        console.log(person["firstName"]);
+        console.log(person["age"]);
+        console.log(person["height"]);
+        //call method in object.
+        console.log(person.getFullName());
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+
+.container { 
+    position: relative; 
+    height: 250px;
+    width: 70%;
+}
+
+.container video {
+    position:relative;
+    z-index:-1;
+}
+.overlay {
+    position: absolute;
+    height: 250px; width: 99%;
+    padding-top: 3px; padding-left: 3px; padding-right: 3px;
+    z-index:1;
+    background-color: wheat;
+    margin-left: 20px;
+}
+
+.overlay body {
+    position: absolute;
+    background-color: whitesmoke;
+}
+
+.overlay h1 {
+    position:absoulte;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.overlay h2{
+    position:absoulte;
+    color: whitesmoke;
+    font-size: 15px;
+    text-align: right;
+    margin-right: 20px;
+}
+
+p.greeting{
+    position:absoulte;
+    margin-left: 20px;
+}
+
+div.main{
+    background-color: honeydew;
+    /*
+        background-color: rgba(255, 0, 0, 0.3);
+        background-image: url("img_tree.gif");
+    */
+    
+
+    border: double;
+    border-color: maroon;
+    /*border-image: url(border.png) 30 round;*/
+}
+
+
+
+#myVideo {
+    position: fixed;
+    padding: 1px;
+    width: 80%; height: 90%;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    
+    <p id = "demo"></p>
+    <button onclick = "sayHello()">Say Hello</button>
+    <button onclick = "addOne()">add 1</button>
+    <button onclick = "subOne()">sub 1</button>
+
+    <script>
+        document.getElementById('demo').innerHTML = "Paragraph changed.";
+        
+        function sayHello(){
+            document.getElementById('demo').innerHTML = "Yuhyun Hello!";
+        }
+        
+        var x=0;
+        function addOne(){
+            x++;
+            document.getElementById('demo').innerHTML = "Count: " + x;
+        }
+
+        function subOne(){
+            x--;
+            document.getElementById('demo').innerHTML = "Count: " + x;
+        }
+
+    </script>
+
+</body>
+
+</html>
