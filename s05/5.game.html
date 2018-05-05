@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Number Guessing Game.</h1>
+    <p>We have selected a number between 1 and 10.</p>
+    <label for="txtNumCheck">Enter a guess: </label><!--label pairs with input always-->
+    <input id = "txtNumCheck" type="text">
+    <button id = "btnNumCheck">Submit</button>
+
+    <p id = "previous"></p>
+
+    <p id  = "result"></p>
+
+    <script>
+        var rand = Math.floor(Math.random()*10+1) //number between 1 to 10.
+        function calc(){
+            var input = document.querySelector("#txtNumCheck");
+            if(parseInt(input.value)> parseInt(rand)){
+                document.querySelector("#result").innerHTML = "lower";
+                document.querySelector("#previous").innerHTML = "Your previous guess was: " + input.value;
+            }
+            else if(parseInt(input.value) < parseInt(rand)){
+                document.querySelector("#result").innerHTML = "higher";
+                document.querySelector("#previous").innerHTML = "Your previous guess was: " + input.value;
+            }
+            else if(parseInt(input.value) == parseInt(rand)){
+                document.querySelector("#result").innerHTML = "correct!";
+            }
+        }
+        var btnNumCheck = document.querySelector("#btnNumCheck");
+        btnNumCheck.addEventListener('click',calc);
+
+        /*
+            hw: add new game btn.
+                game allows only 5 trials.
+                show previous guesses.
+        */
+    </script>
+
+</body>
+</html>

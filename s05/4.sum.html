@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <label for="txtFirst">First: </label>
+    <input id = "txtFirst" type="txt">
+
+    <label for="txtSecond">Second: </label>
+    <input id = "txtSecond" type="txt">
+
+    
+    <button id = "btnSum">Check!</button>
+    <br>
+    <p id = "demo"></p>
+
+    <script>
+        function displaySum(){
+            var First = document.querySelector("#txtFirst");
+            var Second = document.querySelector("#txtSecond");
+            document.querySelector("#demo").innerHTML = parseInt(First.value) + parseInt(Second.value);
+        }
+        var btnSum = document.querySelector("#btnSum");
+        btnSum.addEventListener('click',displaySum);
+    </script>
+</body>
+</html>
